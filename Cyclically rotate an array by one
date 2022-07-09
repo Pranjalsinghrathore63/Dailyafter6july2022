@@ -1,0 +1,66 @@
+package Arrays2022;
+import java.util.*;
+
+
+public class cyclicrotatebyoneclock
+
+{
+
+	
+	
+	static int a[] = new int[]{ 1, 2 ,3, 4 ,5 };
+	
+	public static void main(String[] args) {
+	System.out.println(" enter given  array " );
+	System.out.println(Arrays.toString(a));
+	
+	int x = a[a.length-1], i;
+	
+	for(i = a.length -1 ; i >0 ; i--)
+	
+		
+		a[i] = a[i-1];
+		
+		
+		a[0]  = x ;
+		
+		
+		
+		
+	
+		
+		
+		System.out.println(" output array is ");
+		System.out.println(Arrays.toString(a));
+		
+		
+		
+		
+
+	}
+
+}
+
+
+
+
+
+
+/* 
+
+class Compute {
+    
+    public void rotate(int arr[], int n)
+    {
+        
+           int x = arr[n-1], i;
+   for (i = n-1; i > 0; i--)
+      arr[i] = arr[i-1];
+   arr[0] = x;
+        
+        
+        
+    }
+}
+
+*/
